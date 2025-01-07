@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D9563D422D2D838D00E4D5C3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D9563D412D2D838D00E4D5C3 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		D9FE2B8E2D2D80B200D6F074 /* Country Flag Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Flag Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9563D0B2D2D827B00E4D5C3 /* Country Flag Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Country Flag Game.app"; path = "/Users/rabano/Desktop/Mobile Apps Development/Unit 7/Country Flag Game/build/Debug-iphoneos/Country Flag Game.app"; sourceTree = "<absolute>"; };
+		D9563D412D2D838D00E4D5C3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +38,8 @@
 			isa = PBXGroup;
 			children = (
 				D9FE2B902D2D80B200D6F074 /* Country Flag Game */,
-				D9FE2B8F2D2D80B200D6F074 /* Products */,
+				D9563D412D2D838D00E4D5C3 /* .gitignore */,
 			);
-			sourceTree = "<group>";
-		};
-		D9FE2B8F2D2D80B200D6F074 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D9FE2B8E2D2D80B200D6F074 /* Country Flag Game.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,7 +64,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Country Flag Game";
-			productReference = D9FE2B8E2D2D80B200D6F074 /* Country Flag Game.app */;
+			productReference = D9563D0B2D2D827B00E4D5C3 /* Country Flag Game.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +92,7 @@
 			mainGroup = D9FE2B852D2D80B200D6F074;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D9FE2B8F2D2D80B200D6F074 /* Products */;
+			productRefGroup = D9FE2B852D2D80B200D6F074;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +106,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9563D422D2D838D00E4D5C3 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
