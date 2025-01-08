@@ -11,8 +11,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D9563D0B2D2D827B00E4D5C3 /* Country Flag Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Country Flag Game.app"; path = "/Users/rabano/Desktop/Mobile Apps Development/Unit 7/Country Flag Game/build/Debug-iphoneos/Country Flag Game.app"; sourceTree = "<absolute>"; };
 		D9563D412D2D838D00E4D5C3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D9E60EB82D2ED0D8007887C8 /* Country Flag Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Flag Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -39,6 +39,7 @@
 			children = (
 				D9FE2B902D2D80B200D6F074 /* Country Flag Game */,
 				D9563D412D2D838D00E4D5C3 /* .gitignore */,
+				D9E60EB82D2ED0D8007887C8 /* Country Flag Game.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,7 +65,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Country Flag Game";
-			productReference = D9563D0B2D2D827B00E4D5C3 /* Country Flag Game.app */;
+			productReference = D9E60EB82D2ED0D8007887C8 /* Country Flag Game.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
