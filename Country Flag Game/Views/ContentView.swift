@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var gameManager = GameManager()
+    @StateObject private var gameManager = GameManager()
     var body: some View {
         NavigationView {
             VStack(spacing: 40) {
@@ -16,9 +16,7 @@ struct ContentView: View {
                     Text("Country Flag Game")
                         .font(.title)
                         .fontWeight(.heavy)
-                        .foregroundColor(.yellow)
                     Text("Ready to test your skills?")
-                        .foregroundColor(.yellow)
                 }
                 NavigationLink {
                     QuestionView()
@@ -27,8 +25,8 @@ struct ContentView: View {
                     CustomButton(text: "Start")
                 }
             }
+            .foregroundColor(.yellow)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .ignoresSafeArea(.all)
             .background(.cyan)
         }
     }

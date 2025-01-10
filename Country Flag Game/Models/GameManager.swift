@@ -18,6 +18,10 @@ class GameManager: ObservableObject {
     @Published private(set) var progress: CGFloat = 0.0
     @Published private(set) var score = 0
     
+    init() {
+        reset()
+    }
+    
     func reset() {
         loadQuestions()
         questions = questions.shuffled()
@@ -35,23 +39,26 @@ class GameManager: ObservableObject {
         }
         else {
             questions.removeAll()
-            if UIImage(named: country) != nil {
-                var incorrectAnswer = [String]()
-                while incorrectAnswer.count < 3 {
-                    if let randomCountry = countries.randomElement() {
-                        if randomCountry != country && !incorrectAnswer.contains(randomCountry) {
-                            incorrectAnswer.append(randomCountry)
+            for country in countries {
+                if UIImage(named: country) != nil {
+                    var incorrectAnswer = [String]()
+                    while incorrectAnswer.count < 3 {
+                        if let randomCountry = countries.randomElement() {
+                            if randomCountry != country && !incorrectAnswer.contains(randomCountry) {
+                                incorrectAnswer.append(randomCountry)
+                            }
                         }
                     }
+                    questions.append(Question(correctAnswer: Answer(text:country, isCorrect: true),
+                                              incorrectAnswers: [
+                                                Answer(text: incorrectAnswer[0], isCorrect: false),
+                                                Answer(text: incorrectAnswer[1], isCorrect: false),
+                                                Answer(text: incorrectAnswer[2], isCorrect: false)
+                                              ]))
                 }
-                questions.append(Question(correctAnswer: Answer(text:country, isCorrect: true), incorrectAnswers: [
-                    Answer(text: incorrectAnswer[0], isCorrect: false),
-                    Answer(text: incorrectAnswer[1], isCorrect: false),
-                    Answer(text: incorrectAnswer[2], isCorrect: false)
-                ]))
-            }
-            else {
-                print("\(country) image cannot be found")
+                else {
+                    print("\(country) image cannot be found")
+                }
             }
         }
     }
@@ -75,10 +82,6 @@ class GameManager: ObservableObject {
         if answer.isCorrect {
             score += 1
         }
-    }
-    
-    init() {
-        reset()
     }
 }
 
